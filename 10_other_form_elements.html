@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+<!--Label-->
+    <div>
+        <label for="name">Username</label> <br>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="password">Password</label><br>
+        <input type="email" id="password" placeholder="Enter your email">
+    </div>
+
+    <br>
+
+<!--Text Area-->
+    <div>
+        <label for="message">Message</label> <br>
+        <textarea id="message" placeholder="Enter your message" rows="10" cols="50"></textarea>
+    </div>
+
+    <br>
+
+<!--Select-->
+    <div>
+    <label for="language">Select your programming language</label><br>
+   <select id="language">
+       <option value="java">Java</option>
+       <option value="python">Python</option>
+       <option value="c">C</option>
+       <option value="c++">C++</option>
+       <option value="c#">C#</option>
+   </select>
+    </div>
+
+     <br>
+
+<!--select option group-->
+    <div>
+
+        <label for="tech">Select your tech</label><br>
+        <select id="tech">
+            <optgroup label="languages">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="c#">C#</option>
+            </optgroup>
+
+            <optgroup label="frontend frameworks">
+                <option value="reactJs">ReactJs</option>
+                <option value="nextJs">NextJs</option>
+                <option value="vueJs">vueJs</option>
+                <option value="angular">Angular</option>
+            </optgroup>
+
+            <optgroup label="backend frameworks">
+                <option value="spring">Spring</option>
+                <option value="spring-boot">Spring Boot</option>
+                <option value="express">Express</option>
+            </optgroup>
+
+        </select>
+    </div>
+
+    <br>
+
+<!--Data list-->
+    <div>
+        <label for="country search">Select your country</label><br>
+        <input id="country search" type="text" placeholder="Enter your country" list="countries">
+        <datalist id="countries">
+            <option value="sri lanka">Srilanka</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+            <option value="russia">Russia</option>
+            <option value="italy">Italy</option>
+        </datalist>
+    </div>
+
+    <br>
+
+<!--grouping-->
+    <div>
+    <legend>Select your gender</legend>
+    <fieldset id="gender">
+        <input id="male" type="radio" name="gender"> <label for="male">Male</label>
+        <input id="female" type="radio" name="gender"> <label for="female">Female</label>
+    </fieldset>
+    </div>
+
+    <br>
+
+<!--Button-->
+    <button type="button">Click</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+<br>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="a" value="10">
+    +
+    <input type="number" id="b" name="b" value="20">
+    =
+    <output name="result">30</output>
+</form>
+
+</body>
+</html>

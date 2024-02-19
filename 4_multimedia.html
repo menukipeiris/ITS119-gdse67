@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="assets/images/2ijse.png" title="ijse.lk" alt="ijse.lk">
+
+<picture>
+    <source media="(min-width:1000px)" srcset="assets/images/large.jpg">
+    <source media="(min-width:800px)" srcset="assets/images/medium.jpg">
+    <img src="assets/images/small.jpg" title="iphone" alt="iphone">
+
+</picture>
+
+<video
+        controls
+        autoplay
+        loop
+        muted
+        poster="assets/images/car-post.jpg"
+        width="700px"
+        height="400px"
+>
+    <source src="assets/videos/car.mp42" type="video/mp4">
+    <source src="assets/videos/car.webm" type="video/webm">
+    <track label="English" kind="subtitles" src="assets/sub/sample.vtt" srclang="en" default>
+    <track label="Arabic" kind="subtitles" src="assets/sub/arabic.vtt" srclang="ar">
+    Your browser does not support the video tag.
+</video>
+
+<audio controls>
+    <source src="assets/audio/audio_file2.mp3" type="audio/mp3">
+    Your browser does not support the video tag.
+</audio>
+
+</body>
+</html>
